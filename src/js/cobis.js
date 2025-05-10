@@ -10,7 +10,7 @@ export function renderCobis(contenedor) {
     </section>
 
     <section>
-      <img style="width: 300px;" src="./public/img/Kuyi.png" alt="Kuyi">
+      <img style="width: 300px;" src="../../public/img/Kuyi.png" alt="Kuyi">
     </section>
   </div>
   <div>
