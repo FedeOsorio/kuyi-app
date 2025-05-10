@@ -1,40 +1,50 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
-    <title>Vite App</title>
-  </head>
-  <body>
-    <header class="header">
-      <h1 class="kuyiTitle">Kuyi App</h1>
-      <nav class="navbar">
-        <ul>
-          <li>Inicio</li>
-          <li>Cobis</li>
-          <li>Alimentación</li>
-          <li>Enfermedades</li>
-          <li>Contacto</li>
-        </ul>
-      </nav>
-    </header>
-    <div class="container">
-    <section>
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. In eos eum nobis reiciendis aliquam sapiente eaque, magnam nam, facere fugit mollitia soluta nihil, doloremque illum quam animi nemo modi amet!
-      Dolores ipsa eius nobis pariatur, soluta nemo ipsam iure explicabo quae rem labore corrupti ratione quam illum commodi ducimus harum enim ipsum repellendus itaque est maxime magni architecto? Id, repudiandae.
-    </section>
-    
-    <section>
-    <img style="width: 300px;" src="./public/img/Kuyi.png" alt="Kuyi">
-    </section>
-  </div>
-    <footer>
-      <div id="app"></div>
-    </footer>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+    rel="stylesheet">
+  <title>Vite App</title>
+</head>
+
+<body>
+  <header class="header">
+    <h1 class="kuyiTitle">Kuyi App</h1>
+    <nav class="navbar">
+      <ul class="navbar-list">
+        <li class="logo nav-item" data-vista="home">
+          <span>Inicio</span>
+          <img src="/public/img/guinea-pig.svg" alt="">
+        </li>
+        <li class="logo nav-item" data-vista="cobis">
+          <span>Cobis</span>
+          <img src="/public/img/guinea-pig4.svg" alt="">
+        </li>
+        <li class="logo nav-item" data-vista="info">
+          <span>Información</span>
+          <img src="/public/img/guinea-pig3.svg" alt="">
+        </li>
+        <li class="logo nav-item" data-vista="contact">
+          <span>Contacto</span>
+          <img src="/public/img/guinea-pig2.svg" alt="">
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Aquí solo se renderiza el contenido dinámico -->
+  <div class="container" id="contenedor-vista"></div>
+  
+  <script type="module" src="app.js"></script>
+  <script src="/src/js/home.js"></script>
+  <script src="/src/js/cobis.js"></script>
+  <script src="/src/js/info.js"></script>
+
+</body>
+
 </html>

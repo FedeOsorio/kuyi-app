@@ -7,13 +7,20 @@
   padding: 0;
   box-sizing: border-box;
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: var(--colorFondo);
+  color: #242424;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --colorFondo: #d2c1b0;
+  --color1: #ad6d2f;
+  --color2: #e4bc84;
+  --color3: #80411e;
+  --color4: #8f755f;
+  --color5: #37251b9f;
 }
 
 a {
@@ -40,7 +47,7 @@ h1 {
   line-height: 1.1;
 }
 
-#app {
+#contenedor-vista {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
@@ -48,16 +55,15 @@ h1 {
 }
 
 .logo {
-  height: 6em;
-  padding: 1.5em;
   will-change: filter;
   transition: filter 300ms;
 }
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+  filter: drop-shadow(0 0 .2em var(--color3));
+  /*646cffaa*/
 }
 .logo.vanilla:hover {
-  filter: drop-shadow(0 0 2em #f7df1eaa);
+  filter: drop-shadow(0 0 1em #f7df1eaa);
 }
 
 .card {
@@ -114,23 +120,48 @@ header{
   padding: 15px;
 }
 
-.navbar{
+.navbar {
   display: flex;
   justify-content: center;
-  margin: 0 auto;
-
-  ul{
-    padding: 0 60px 0 60px;
-    display: flex;
-    list-style: none;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    column-gap: 80px;
-    row-gap: 10px;
-  }
 }
 
-.container{
+.navbar-list {
+  padding: 0 60px;
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  column-gap: 80px;
+  row-gap: 10px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.nav-item {
+  display: inline-flex;
+  height: fit-content;
+  align-items: center;
+  gap: 4px;
+  box-sizing: border-box;
+  width: 172px;
+  justify-content: center;
+  font-weight: 600;
+  cursor: pointer;
+  border: 1px solid var(--color5);
+  border-radius: 25px;
+  padding: 0 5px;
+  background-color: var(--colorFondo);
+}
+
+.nav-item img {
+  height: 40px;
+  width: 55px; /* Ajustable */
+  align-self: center;
+  box-sizing: border-box;
+  object-fit: cover;
+}
+
+ .container{
   width: 90%;
   margin: 0 auto;
 }
