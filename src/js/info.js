@@ -9,7 +9,7 @@ document.querySelector('#app').innerHTML = `
     </section>
 
     <section>
-      <img style="width: 300px;" src="../../public/img/Kuyi.png" alt="Kuyi">
+      <img style="width: 300px;" src="/img/Kuyi.png" alt="Kuyi">
     </section>
   </div>
   <div>
@@ -27,4 +27,3 @@ document.querySelector('#app').innerHTML = `
 `
 
 setupCounter(document.querySelector('#counter'))
-
