@@ -1,9 +1,9 @@
 {
   "rewrites": [
-    {
-      "source": "/app/(.*)",
-      "destination": "/app/index.html"
-    }
+    { "source": "/assets/(.*)", "destination": "/app/assets/$1" },
+    { "source": "/node_modules/(.*)", "destination": "/app/node_modules/$1" },
+    { "source": "/_expo/(.*)", "destination": "/app/_expo/$1" },
+    { "source": "/app/(.*)", "destination": "/app/index.html" }
   ],
   "headers": [
     {
